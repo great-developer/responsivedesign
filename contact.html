@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+ 
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  footer {
+    position: absolute;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-white navbar-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html"><img src="./imgs/llogo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path stroke='#000000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/>
+        </svg>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" href="" style="border-bottom: 2px solid black;">Contact us</a>
+        </li> 
+      </ul>
+      <a href="https://www.linkedin.com/company/little-place-labs " target="_blank"><img src="./imgs/Linked In.png"></a>
+    </form>
+    </div>  
+  </div>
+</nav>
+
+<section id="contact" class="pt-5">
+  <div class="container mt-5">
+    <p class="contact-title">Contact Us</p>
+    <div class="row">
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.234772907715!2d-0.09117408405944252!3d51.52725361707212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca66e312795%3A0x7ffd0edc82aa7573!2sTechforing%20Ltd.!5e0!3m2!1sen!2s!4v1632219734104!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col-md-6">
+        <p class="contact-title" style="font-weight:400">Contact Info</p>
+        <div class="pt-3"><img src="./imgs/map-pin (1).png"><span class="location-info pl-4">Kemp House, 160 City Road, EC1V 2NX, London, United Kingdom</span></div>
+        <div class="pt-3"><img src="./imgs/phone.png"><span class="location-info pl-4">+44 7944039791</span></div>
+        <div class="pt-3"><img src="./imgs/mail.png"><span class="location-info pl-4">contactus@littleplace.com</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 
+<section id="leave-message" class="pt-5">
+  <div class="container mt-5">
+    <p class="contact-title">Leave a message</p>
+    <div class="row">
+       <div class="col-md-6 mt-3" id="leave-message">
+        <p class="message-letter">Hello, thank you for your interest in us. please use the form below in order to get in touch with our team.</p>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <label class="form-label">First name *</label>
+              <input type="text" class="form-input" name="fname" placeholder="enter your frist name">
+            </div>
+            <div class="col-md-6">
+              <label>Last name *</label>
+              <input type="text" class="form-input" name="lname" placeholder="enter your last name">
+            </div>
+          </div>
+          <label class="pt-4">Email*</label>
+          <input type="email" class="form-input" name="email" placeholder="enter your email">
+          <label class="pt-4">Message *</label>
+          <textarea rows="4" placeholder="leave your message to us..." class="form-textarea"></textarea>
+          <button class="btn btn-message mt-4">Send message</button>
+        </form>
+      </div>
+      <div class="col-md-6 mt-3" id="leave-img">
+        <img src="./imgs/contact.png" width="100%">
+      </div>
+     
+    </div>
+  </div>
+</section>
+ -->
+<footer class="mt-4 d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-11">
+        <p class="footer-letter">
+          <font class="f-confirm">© 2021 Little Place Labs Ltd</font>
+          <font class="f-add pl-3"><font id="f-about">About us</font> &nbsp; | &nbsp; <font id="f-contact">Contact us</font>  &nbsp; | &nbsp; Privacy policy &nbsp; | &nbsp; Terms & condition</font>
+         </p>
+      </div>
+      <div class="col-md-1 d-flex justify-content-end">
+        <div class="pb-3">
+          <a href="https://www.linkedin.com/company/little-place-labs " target="_blank"><img src="./imgs/Linked In (1).png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $('#f-about').click(function(){
+    location.assign('./about.html');
+  });
+  $('#f-contact').click(function(){
+    location.reload();
+  });
+</script>
+</body>
+</html>
